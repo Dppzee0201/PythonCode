@@ -30,3 +30,4 @@ emp_name not like 'i%';
 select count(date) from table2
 
 --Q.2 Find the total number of streams by date and director.
+select date,director,count(*) from table2 group by date,director
